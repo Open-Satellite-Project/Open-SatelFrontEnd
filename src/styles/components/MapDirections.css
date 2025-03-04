@@ -1,0 +1,107 @@
+.map-page-container {
+    width: 80%;
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.content-area {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.map-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.kakao-map {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 🚌 버스 정보 섹션 */
+.bus-info {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+/* 🚌 아이콘 정렬 */
+.bus-icon {
+    font-size: 30px;
+    min-width: 60px; 
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/* 📌 텍스트 정렬 */
+.bus-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.bus-info h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bus-info p {
+    margin: 5px 0; 
+    line-height: 1.5;
+}
+
+/* 🔵 버튼 정렬 */
+.bus-button {
+    display: inline-block;
+    width: 100px;
+    max-width: 300px;
+    min-width: 250px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bus-button:hover {
+    background-color: #0056b3;
+}

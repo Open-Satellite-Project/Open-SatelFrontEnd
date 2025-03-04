@@ -1,0 +1,176 @@
+/* 메인 페이지 컨테이너 */
+.main-page {
+  display: flex;
+  width: 100vw;
+  /* 화면 전체 너비 */
+  height: 80vh;
+  /* 화면 전체 높이의 80% */
+  gap: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* 공통 섹션 스타일 */
+.reservation-section,
+.find-doctor-section,
+.quick-service-section {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 진료 예약 섹션 */
+.reservation-section {
+  background-color: #005eb8;
+  color: white;
+}
+
+.reservation-section h2 {
+  font-size: 1.8rem;
+}
+
+.reservation-buttons {
+  margin-top: 1rem;
+}
+
+.reservation-buttons button {
+  padding: 0.8rem 1.5rem;
+  margin-right: 1rem;
+  border: none;
+  background-color: #005eb8;
+
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* 의료진 찾기 섹션 */
+.find-doctor-section {
+  background-color: #5cbf61;
+  color: #333;
+}
+
+.find-doctor-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #005eb8;
+  margin-bottom: 1rem;
+}
+
+.find-doctor-section p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* 빠른 서비스 섹션 */
+.quick-service-section {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* 상단 네비게이션 바 스타일 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+  margin-right: 0.5rem;
+
+}
+
+.navbar-logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #005eb8;
+}
+
+.navbar-menu ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-menu ul li a:hover {
+  color: #005eb8;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-icons a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.navbar-icons a:hover {
+  color: #005eb8;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  fill: white;
+
+}
+
+.additional-links {
+  list-style: none; /* 점 제거 */
+  padding: 0;
+  margin: 0;
+}
+
+.additional-links li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 아이콘과 텍스트 간격 유지 */
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.additional-links li a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: white; /* 텍스트 색상 흰색 */
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* 텍스트와 아이콘 간격 */
+}
+
+.icon {
+
+  width: 50px;
+  height: 50px;
+  fill: white; /* 아이콘 색상 흰색 */
+}
