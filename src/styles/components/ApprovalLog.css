@@ -1,0 +1,49 @@
+/* 전체 컨테이너 */
+.approval-log-container {
+    padding: 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  /* 제목 스타일 */
+  .approval-log-container h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 테이블 스타일 */
+  .approval-log-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* 헤더 */
+  .approval-log-container thead {
+    background-color: #4f8ed1;
+    color: white;
+  }
+  
+  .approval-log-container th,
+  .approval-log-container td {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .approval-log-container tbody tr:hover {
+    background-color: #f0f8ff;
+  }
+  
+  /* 승인코드 셀 강조 */
+  .approval-log-container td:last-child {
+    font-family: monospace;
+    color: #444;
+  }
+  

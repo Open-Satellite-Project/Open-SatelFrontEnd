@@ -95,7 +95,6 @@ export default function BusScheduleDashboard() {
 
       // 삭제 기능
       const handleDelete = async (slotid, type) => {
-            // eslint-disable-next-line no-restricted-globals
             if (!window.confirm("삭제하시겠습니까?")) {
                   return;
             }

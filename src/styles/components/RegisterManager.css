@@ -1,0 +1,35 @@
+.register-management-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.register-management-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.register-management-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}   
+
+.register-management-thead {
+    background-color: wheat;
+    padding: 10px;
+}
+
+.register-management-tr {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+

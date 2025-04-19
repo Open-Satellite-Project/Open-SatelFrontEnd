@@ -26,3 +26,7 @@ const hospitalReducer = (state = initialState, action) => {
 };
 
 export default hospitalReducer;
+
+
+
+// 상태를 업데이트하는 로직

@@ -67,7 +67,7 @@ const MainPage = () => {
         <section className="find-doctor-section">
           <h2 className="easy_tit">의료진 찾기</h2>
           <p className="easy_txt">
-            양산부산대학교병원의 의료진은 <br />
+            xxxxx병원의 의료진은 <br />
             환자를 위해 항상 노력하고 있습니다.
           </p>
 
@@ -91,7 +91,7 @@ const MainPage = () => {
 
           <a
             className="btnC whiteLine"
-            href="https://www.pnuyh.or.kr/pnuyh/medical/treat-search.do"
+            href="#"
             target="_self"
           >
             <span>의료진소개 바로가기</span>
@@ -101,10 +101,10 @@ const MainPage = () => {
           <ul className="info_btn">
             <li>
               <a
-                href="https://www.pnuyh.or.kr/pnuyh/medical/department.do?tab=tab_d"
+                href="#"
                 style={{
                   backgroundImage:
-                    "url(/_res/pnuyh/pnuyh/img/main/info_ico01.png)",
+                    "#",
                 }}
                 target="_self"
               >
@@ -113,10 +113,10 @@ const MainPage = () => {
             </li>
             <li>
               <a
-                href="https://www.pnuyh.or.kr/pnuyh/medical/department.do"
+                href="#"
                 style={{
                   backgroundImage:
-                    "url(/_res/pnuyh/pnuyh/img/main/info_ico02.png)",
+                    "#",
                 }}
                 target="_self"
               >
@@ -125,10 +125,10 @@ const MainPage = () => {
             </li>
             <li>
               <a
-                href="https://www.pnuyh.or.kr/pnuyh/medical/department.do"
+                href="#"
                 style={{
                   backgroundImage:
-                    "url(/_res/pnuyh/pnuyh/img/main/info_ico03.png)",
+                    "#",
                 }}
                 target="_self"
               >
@@ -140,12 +140,12 @@ const MainPage = () => {
 
         <section className="quick-service-section">
           <h1>대표전화 </h1>
-          <h1>1577-7512</h1>
+          <h1>xxxx-xxxx</h1>
           <div className="quick-links">
             <div><Link to="/hospital/maps-directions">오시는 길</Link></div>
-            <div><a href="https://www.pnuyh.or.kr/pnuyh/hospital/hospital-guide.do">병원안내도</a></div>
-            <div><a href="https://www.pnuyh.or.kr/pnuyh/hospital/parking.do">주차 안내</a></div>
-            <div><a href="https://www.pnuyh.or.kr/pnuyh/medical/visiting-patient.do">병문안 안내</a></div>
+            <div><a href="#">병원안내도</a></div>
+            <div><a href="#">주차 안내</a></div>
+            <div><a href="#">병문안 안내</a></div>
           </div>
           <p>후원회 안내</p>
           <p>나눔과 기부는 오래도록 가슴이 뜨겁습니다.</p>
@@ -155,7 +155,7 @@ const MainPage = () => {
       <header className="navbar">
         <div className="navbar-logo">
           <a href="https://www.pnuyh.or.kr/pnuyh/index.do">
-            <img src={pnuyhLogo} alt="양산부산대학교병원" /></a>
+            <img src={pnuyhLogo} alt="xxxx대학교병원" /></a>
         </div>
         <nav className="navbar-menu">
           <ul>
@@ -168,7 +168,7 @@ const MainPage = () => {
           </ul>
         </nav>
         <div className="navbar-icons">
-          <a href="https://www.pnuyh.or.kr/pnuyh/member/login.do">로그인</a>
+          <a href="#">로그인</a>
           <a href="#">KOR</a>
           <a href="#">🔍</a>
         </div>

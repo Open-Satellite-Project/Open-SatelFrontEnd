@@ -1,15 +1,25 @@
 import axios from "axios";
 import api from './index';
-import { Header } from "antd/es/layout/layout";
 
 const BASE_URL = "http://localhost:8080/ROOT/api";
 
-export const shuttleApi = {
+const getAuthHeader = () => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+        throw new Error('인증 토큰이 없습니다. 다시 로그인해주세요.');
+    }
+    return { 
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+    };
+};
 
+export const shuttleApi = {
     // 시간표 조회
     getTimeTable: async () => {
         try {
-            const response = await axios.get(`${BASE_URL}/timetable`);
+            const headers = getAuthHeader();
+            const response = await axios.get(`${BASE_URL}/admin/timetable`, { headers });
             return response.data;
         } catch (error) {
             console.error('시간표 조회 실패:', error);
@@ -17,10 +27,11 @@ export const shuttleApi = {
         }
     },
 
-    // 시간표 추가 (Administrator)
+    // 시간표 추가
     addTimetable: async (timeslot) => {
         try {
-            const response = await axios.post(`${BASE_URL}/timetable`, timeslot);
+            const headers = getAuthHeader();
+            const response = await axios.post(`${BASE_URL}/admin/timetable`, timeslot, { headers });
             return response.data;
         } catch (error) {
             console.error('시간표 추가 실패:', error);
@@ -28,43 +39,29 @@ export const shuttleApi = {
         }
     },
 
-    // 시간표 수정 (Administrator)
+    // 시간표 수정
     updateTimetable: async (slotid, timeslot) => {
         try {
-            console.log("API PUT 요청:", `${BASE_URL}/timetable/${slotid}`, timeslot);
-
-            const response = await axios.put(`${BASE_URL}/timetable/${slotid}`, timeslot, {
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            });
-
-            console.log("API 응답:", response.data);
+            const headers = getAuthHeader();
+            const response = await axios.put(`${BASE_URL}/admin/timetable/${slotid}`, timeslot, { headers });
             return response.data;
-
         } catch (error) {
-            console.error("API 시간표 수정 실패:", error);
+            console.error('시간표 수정 실패:', error);
             throw error;
         }
     },
 
-    // 시간표 삭제 (Administrator)
+    // 시간표 삭제
     deleteTimetable: async (slotid) => {
         try {
-
-            console.log("API DELETE 요청:", `${BASE_URL}/timetable/${slotid}`);
-            
-            const response = await axios.delete(`${BASE_URL}/timetable/${slotid}`, {
-                headers: {
-                    "Content-Type": "application/json"  
-                }
-            });
-            console.log("API 응답:",response.data);
+            const headers = getAuthHeader();
+            const response = await axios.delete(`${BASE_URL}/admin/timetable/${slotid}`, { headers });
             return response.data;
-            
         } catch (error) {
-            console.error('시간표 삭제 실패', error);
+            console.error('시간표 삭제 실패:', error);
             throw error;
         }
     }
 };
+
+console.log(localStorage.getItem('token'));

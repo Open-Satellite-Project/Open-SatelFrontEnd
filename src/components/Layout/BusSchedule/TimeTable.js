@@ -29,11 +29,11 @@ const TimeTable = () => {
                     <div className="route-container left">
                         <div className="route-from">병원</div>
                         <div className="route-arrow">→</div>
-                        <div className="route-to">부산대양산캠퍼스</div>
+                        <div className="route-to">xxxxx캠퍼스</div>
                     </div>
                     <div className="time-label">시간</div>
                     <div className="route-container right">
-                        <div className="route-from">부산대양산캠퍼스</div>
+                        <div className="route-from">xxxxx캠퍼스</div>
                         <div className="route-arrow">→</div>
                         <div className="route-to">병원</div>
                     </div>
